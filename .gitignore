@@ -1,0 +1,28 @@
+# Arquivos de compilação
+*.class
+
+# Pastas criadas por IDEs
+.idea/
+*.iml
+*.project
+*.classpath
+*.settings/
+out/
+
+# Arquivos de logs
+*.log
+
+# Bibliotecas baixadas manualmente
+lib/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Maven e Gradle
+target/
+build/
+
+# Configurações específicas de execução local
+*.properties
+*.env
