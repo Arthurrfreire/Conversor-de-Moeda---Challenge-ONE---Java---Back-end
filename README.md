@@ -1,6 +1,6 @@
 # Conversor de Moedas 💱
 
-Um projeto simples e prático em **Java** para realizar conversões de moedas em tempo real, utilizando uma **API de taxas de câmbio**. Este projeto reforça conceitos como consumo de APIs, manipulação de JSON, logging eficiente, e boas práticas de desenvolvimento.
+Esse projeto foi proposto resolução do desafio do Conversor de Moedas simples e prático em **Java** para realizar conversões de moedas em tempo real, utilizando uma **API de taxas de câmbio**. Este projeto reforça conceitos como consumo de APIs, manipulação de JSON, logging eficiente, e boas práticas de desenvolvimento.
 
 ---
 
@@ -59,7 +59,9 @@ Um projeto simples e prático em **Java** para realizar conversões de moedas em
 
         java src.currencyconverter.Main
 
-🧑‍💻 Exemplos de Uso
+---
+
+## 🧑‍💻 Exemplos de Uso
 
 Menu interativo:
 
