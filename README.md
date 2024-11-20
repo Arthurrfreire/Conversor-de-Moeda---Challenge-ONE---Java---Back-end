@@ -88,5 +88,5 @@ Este projeto é de uso livre e aberto. Sinta-se à vontade para utilizá-lo e ad
 ## **Contato**
 Caso tenha dúvidas ou sugestões, entre em contato:
 
-- **Email**: [seu-email@example.com](mailto:arthur.ramalho.freire@gmail.com)
-- **LinkedIn**: [Seu Perfil](https://www.linkedin.com/in/arthurramalhofreire/)
+- **Email**: [arthur.ramalho.freire@gmail.com](mailto:seu-email@example.com)
+- **LinkedIn**: [arthurramalhofreire](https://www.linkedin.com)
