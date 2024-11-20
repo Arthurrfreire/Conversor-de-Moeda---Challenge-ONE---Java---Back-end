@@ -52,8 +52,8 @@ Antes de executar o projeto, certifique-se de ter instalado:
 
 ## **Estrutura do Projeto**
 
-src/ ├── ApiClient.java // Lida com a requisição à API 
-    ├── CurrencyData.java // Processa os dados retornados pela API 
+    src/ ├── ApiClient.java // Lida com a requisição à API
+    ├── CurrencyData.java // Processa os dados retornados pela API
     ├── CurrencyConverter.java // Contém a lógica de conversão 
     ├── Main.java // Ponto de entrada do programa
 
