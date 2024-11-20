@@ -1,92 +1,96 @@
-# **Conversor de Moedas**
+# Conversor de Moedas 💱
 
-## **Descrição**
-O **Conversor de Moedas** é uma aplicação em Java que permite ao usuário realizar conversões dinâmicas entre diferentes moedas, utilizando taxas de câmbio em tempo real obtidas de uma API externa. A aplicação oferece uma interface textual amigável via console, permitindo múltiplas conversões de forma prática e eficiente.
-
----
-
-## **Funcionalidades**
-- Realizar conversões entre diferentes moedas.
-- Taxas de câmbio dinâmicas obtidas de uma API em tempo real.
-- Listar moedas disponíveis.
-- Interface textual amigável com validação de entradas do usuário.
-- Permitir múltiplas conversões sem reiniciar o programa.
+Um projeto simples e prático em **Java** para realizar conversões de moedas em tempo real, utilizando uma **API de taxas de câmbio**. Este projeto reforça conceitos como consumo de APIs, manipulação de JSON, logging eficiente, e boas práticas de desenvolvimento.
 
 ---
 
-## **Tecnologias Utilizadas**
-- **Java**: Linguagem principal.
-- **HttpClient**: Para consumo da API.
-- **Gson**: Para manipulação de dados JSON.
-- **API Externa**: [Exchangerate-API](https://www.exchangerate-api.com/).
+## 🚀 Funcionalidades
+- Conversão dinâmica entre várias moedas.
+- Taxas de câmbio atualizadas em tempo real via API.
+- Validação de entradas do usuário para garantir segurança e consistência.
+- Menu interativo no console com múltiplas opções de conversão.
+- Suporte a múltiplas conversões sem reiniciar o programa.
+- Logging robusto com `java.util.logging`.
 
 ---
 
-## **Como Funciona**
-1. O programa consome dados de uma API de taxas de câmbio.
-2. O JSON retornado é processado utilizando a biblioteca Gson.
-3. O usuário interage com o programa via console, escolhendo moedas de origem e destino, e inserindo o valor a ser convertido.
-4. O programa calcula o valor convertido com base nas taxas de câmbio e exibe o resultado.
+## 🛠️ Tecnologias Utilizadas
+- **Java** (JDK 17 ou superior)
+- **HttpClient** para requisições HTTP.
+- **Gson** para manipulação de dados JSON.
+- **java.util.logging** para logging eficiente.
+- API de taxas de câmbio: [ExchangeRate-API](https://www.exchangerate-api.com/).
 
 ---
 
-## **Pré-requisitos**
-Antes de executar o projeto, certifique-se de ter instalado:
-- Java 8 ou superior.
-- IntelliJ IDEA ou outro IDE para Java.
-- Biblioteca Gson (adicionada ao projeto como dependência).
+## 📂 Estrutura do Projeto
+
+    . ├── src/ │ 
+    
+    ├── currencyconverter/ │ 
+    ├── ApiClient.java // Consome a API de taxas de câmbio │ 
+    ├── CurrencyData.java // Modela os dados retornados pela API │ 
+    ├── CurrencyConverter.java // Menu interativo para conversões │ 
+    ├── Main.java // Classe principal para execução 
+    ├── lib/ // Dependências externas (como gson-2.10.1.jar) 
+    ├── .env // Chave de API ├── README.md // Documentação do projeto 
+    ├── .gitignore // Arquivos ignorados no Git
 
 ---
 
-## **Como Executar o Projeto**
-1. Clone o repositório ou copie os arquivos do projeto.
-2. Adicione a biblioteca Gson ao projeto:
-    - Usando Maven/Gradle ou manualmente, baixando o JAR da [Maven Repository](https://mvnrepository.com/artifact/com.google.code.gson/gson).
-3. Compile e execute o arquivo `Main.java` no IntelliJ IDEA ou outro IDE de sua escolha.
-4. Siga as instruções no console:
-    - Digite a moeda de origem.
-    - Digite a moeda de destino.
-    - Insira o valor a ser convertido.
+## 🔧 Configuração e Uso
+
+### **1. Configurar o Ambiente**
+1. Certifique-se de que o JDK 17 ou superior está instalado.
+2. Baixe e adicione o JAR da biblioteca Gson à pasta `lib/` ou configure no `pom.xml`/`build.gradle`.
+
+### **2. Obter a Chave da API**
+1. Registre-se na [ExchangeRate-API](https://www.exchangerate-api.com/) para obter uma chave gratuita.
+2. Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+
+       API_KEY=YOUR_API_KEY
+
+### **3. Executar o Projeto**
+1. Compile o projeto:
+
+        javac src/currencyconverter/*.java
+
+2. Execute o programa:
+
+        java src.currencyconverter.Main
+
+🧑‍💻 Exemplos de Uso
+
+Menu interativo:
+
+![](https://i.imgur.com/2mS2kZO.png)
 
 ---
 
-## **Estrutura do Projeto**
+## 🔍 Boas Práticas Implementadas
 
-    src/ ├── ApiClient.java // Lida com a requisição à API
-    ├── CurrencyData.java // Processa os dados retornados pela API
-    ├── CurrencyConverter.java // Contém a lógica de conversão 
-    ├── Main.java // Ponto de entrada do programa
-
+Logging robusto: Em vez de printStackTrace, utilizamos java.util.logging para melhorar o diagnóstico e manutenibilidade.
+Formatação eficiente de strings: Substituímos concatenações por String.format() e System.out.printf().
+Estrutura modular: Código dividido em classes responsáveis por funções específicas, seguindo princípios de coesão.
 
 ---
 
-## **Exemplo de Uso**
-Ao executar o programa, você verá uma interface como esta:
+## 🔮 Melhorias Futuras
 
-Bem-vindo ao Conversor de Moedas! Digite a moeda de origem (ex: USD) ou 'sair' para encerrar:
-
-USD Digite a moeda de destino (ex: BRL): BRL Digite o valor a ser convertido: 100 Resultado: 100.00 USD é equivalente a 500.00 BRL
-
----
-
-## **Contribuindo**
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
-1. Faça um fork do repositório.
-2. Crie um branch para sua funcionalidade (`git checkout -b feature/nova-funcionalidade`).
-3. Faça o commit das alterações (`git commit -m 'Adicionei uma nova funcionalidade'`).
-4. Faça o push para o branch (`git push origin feature/nova-funcionalidade`).
-5. Abra um pull request.
+Criar uma interface gráfica com JavaFX.
+Adicionar suporte a histórico de conversões.
+Implementar gráficos para análise de variações cambiais.
 
 ---
 
-## **Licença**
-Este projeto é de uso livre e aberto. Sinta-se à vontade para utilizá-lo e adaptá-lo às suas necessidades.
+## 🤝 Contribuições
+
+Sinta-se à vontade para sugerir melhorias ou contribuir com o projeto. Crie uma issue ou envie um pull request! 😊
 
 ---
 
-## **Contato**
-Caso tenha dúvidas ou sugestões, entre em contato:
+## 📜 Licença
 
-- **Email**: [arthur.ramalho.freire@gmail.com](mailto:seu-email@example.com)
-- **LinkedIn**: [arthurramalhofreire](https://www.linkedin.com/in/arthurramalhofreire/)
+Este projeto é open-source e está sob a licença MIT.
+
+---
