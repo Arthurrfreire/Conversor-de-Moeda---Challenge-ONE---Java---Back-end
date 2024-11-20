@@ -72,8 +72,8 @@ Menu interativo:
 
 ## 🔍 Boas Práticas Implementadas
 
-Logging robusto: Em vez de printStackTrace, utilizamos java.util.logging para melhorar o diagnóstico e manutenibilidade.
-Formatação eficiente de strings: Substituímos concatenações por String.format() e System.out.printf().
+Logging robusto: Em vez de printStackTrace, utilizei java.util.logging para melhorar o diagnóstico e manutenibilidade.
+Formatação eficiente de strings: Substituir concatenações por String.format() e System.out.printf().
 Estrutura modular: Código dividido em classes responsáveis por funções específicas, seguindo princípios de coesão.
 
 ---
