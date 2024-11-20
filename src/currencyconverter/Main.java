@@ -13,7 +13,7 @@ public class Main {
             Map<String, Double> rates = currencyData.getRates();
 
             CurrencyConverter converter = new CurrencyConverter();
-            converter.convertCurrency(rates);
+            converter.showMenu(rates);
         } catch (Exception e) {
             System.out.println("Erro ao obter os dados de câmbio: " + e.getMessage());
         }
